@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="contact.js"></script>
-<script src="autoplayer.js"></script>
 <html lang="fr">
   <head>
     <title>Maison des ligues de loraines</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="/cropped-m2l.ico" />
+    <link rel="shortcut icon" href="cropped-m2l.ico" />
   </head>
-  <body>
-    <audio id="audio-player" src="music.mp3"></audio>
+  <header>
     <nav>
       <a href="#checkpoint1">Accueil</a>
       <a href="#checkpoint2">Introduction</a>
@@ -17,6 +15,10 @@
       <a href="#checkpoint4">Impact</a>
       <a href="#checkpoint5">Conclusion</a>
     </nav>
+  </header>
+  <body>
+    <audio id="audio-player" src="music.mp3" loop="true"></audio>
+    <script src="autoplayer.js"></script>
     <h1 id="headertitle">Maison des ligues de loraines</h1>
     <div>
       <h2 id="checkpoint1">Accueil</h2>
@@ -188,7 +190,9 @@
             ></textarea>
           </div>
 
-          <button type="submit" class="submit-btn" onclick="sendMail()">Envoyer</button>
+          <button type="submit" class="submit-btn" onclick="sendMail()">
+            Envoyer
+          </button>
         </form>
       </section>
     </div>
@@ -198,9 +202,6 @@
       <div class="footer-images">
         <img src="HTML5_Logo_512.png" alt="Logo HTML5" />
         <img src="css3-logo-png-transparent-308037898.png" alt="Logo CSS3" />
-      </div>
-      <div class="footer-link">
-        <a href="https://example.com" target="_blank">Lien de validation</a>
       </div>
     </div>
   </footer>
